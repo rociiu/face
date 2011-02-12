@@ -1,3 +1,5 @@
+Note: This gem is still under development , create issues if you meet any problem when using it https://github.com/geemus/fog/issues
+
 Face is a ruby library of http://developers.face.com/.
 
 == Getting Started
