@@ -13,7 +13,3 @@ module Face
   end
   
 end
-
-#client = Face.get_client(:api_key => '1a16f5a64ae7f87677f8d16e621cb918', :api_secret => '2fb4249e299ed6a01cb38145837b9525')
-#pp client.faces_detect(:urls => ['http://farm6.static.flickr.com/5220/5431220348_fbdf80ae9.jpg'])
-##pp client.faces_detect(:file => File.new('5431220348_fbdf810ae9.jpg', 'rb'))
