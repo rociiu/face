@@ -29,7 +29,7 @@ module Face
         if opts[:uids].is_a? Array
           opts[:uids] = opts[:uids].join(',')
         end
-        response = JSON.parse( RestClient.post(API_METHODS[ api_method ], opts.merge(api_crendential)) )
+        response = JSON.parse( RestClient.post(API_METHODS[ api_method ], opts.merge(api_crendential)).body )
         if response['status'] == 'success'
           response
         elsif response['status'] == 'failure'
