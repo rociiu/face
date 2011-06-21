@@ -8,7 +8,7 @@ module Face
       end
 
       def faces_recognize(opts={})
-        opts.assert_valid_keys(:uids, :urls, :namespace, :detector, :attributes, :callback, :callback_url)
+        opts.assert_valid_keys(:uids, :file, :urls, :namespace, :detector, :attributes, :callback, :callback_url)
         make_request(:faces_recognize, opts.merge(user_auth_param))
       end
 
