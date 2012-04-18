@@ -30,7 +30,7 @@ module Face
           opts[:uids] = opts[:uids].join(',')
         end
         response = JSON.parse( RestClient.post(API_METHODS[ api_method ], opts.merge(api_crendential)).body )
-        if response['status'] == 'success'
+        if %w/success partial/.include?(response['status'])
           response
         elsif response['status'] == 'failure'
           raise FaceError.new("Error: #{response['error_code']}, #{response['error_message']}")
