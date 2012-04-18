@@ -5,16 +5,16 @@ module Face
       class FaceError < StandardError; end
 
       API_METHODS = {
-        :faces_detect => 'http://api.face.com/faces/detect.json',
-        :faces_recognize => 'http://api.face.com/faces/recognize.json',
-        :faces_train => 'http://api.face.com/faces/train.json',
-        :faces_status => 'http://api.face.com/faces/status.json',
-        :tags_get => 'http://api.face.com/tags/get.json',
-        :tags_add => 'http://api.face.com/tags/add.json',
-        :tags_save => 'http://api.face.com/tags/save.json',
-        :tags_remove => 'http://api.face.com/tags/remove.json',
-        :account_limits => 'http://api.face.com/account/limits.json',
-        :account_users => 'http://api.face.com/account/users.json'
+        :faces_detect => 'https://api.face.com/faces/detect.json',
+        :faces_recognize => 'https://api.face.com/faces/recognize.json',
+        :faces_train => 'https://api.face.com/faces/train.json',
+        :faces_status => 'https://api.face.com/faces/status.json',
+        :tags_get => 'https://api.face.com/tags/get.json',
+        :tags_add => 'https://api.face.com/tags/add.json',
+        :tags_save => 'https://api.face.com/tags/save.json',
+        :tags_remove => 'https://api.face.com/tags/remove.json',
+        :account_limits => 'https://api.face.com/account/limits.json',
+        :account_users => 'https://api.face.com/account/users.json'
       }
 
       def api_crendential
