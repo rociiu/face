@@ -1,7 +1,6 @@
 module Face
   module Client
     module Recognition
-      # http://api.face.com/faces/detect.json
       def faces_detect(opts={})
         opts.assert_valid_keys(:urls, :file, :detector, :attributes, :callback, :callback_url)
         make_request(:faces_detect, opts)
