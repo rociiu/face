@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.authors     = ["Roc Yu"]
   s.email       = ["rociiu.yu@gmail.com"]
   s.homepage    = "http://rubygems.org/gems/face"
-  s.summary     = %q{Ruby wraper of face.com api}
+  s.summary     = %q{Ruby wraper of SkyBiometry Face Detection and Recognition API}
   s.description = %q{}
 
   s.rubyforge_project = "face"

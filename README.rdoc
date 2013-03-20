@@ -1,6 +1,6 @@
-Note: This gem is still under development , create issues if you meet any problem when using it https://github.com/rociiu/face/issues
+Note: This gem is still under development, create issues if you meet any problem when using it https://github.com/rociiu/face/issues
 
-Face is a ruby library of http://developers.face.com/.
+Face is a ruby library of SkyBiometry Face Detection and Recognition API.
 
 == Getting Started
   
@@ -18,11 +18,6 @@ Detect Faces with Raw image data:
 
   >> client.faces_detect(:file => File.new('image.jpg', 'rb'))
  
-With user auth:
-
-  >> client.twitter_credentials = { :twitter_username => 'twitter_screen_name', :twitter_password => 'twitter_password' }
-  >> client.faces_recognize(:urls => ['http://test.com/1.jpg'], :uids => ['uiicor']) # will make request with twitter credentials
-
-More Documentation refer to http://developers.face.com/.
+More Documentation refer to http://www.skybiometry.com/Documentation.
 
 Author: Roc Yu (rociiu.yu@gmail.com)
