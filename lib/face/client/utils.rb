@@ -6,6 +6,7 @@ module Face
 
       API_METHODS = {
         :faces_detect => 'http://api.skybiometry.com/fc/faces/detect.json',
+        :faces_group => 'http://api.skybiometry.com/fc/faces/group.json',
         :faces_recognize => 'http://api.skybiometry.com/fc/faces/recognize.json',
         :faces_train => 'http://api.skybiometry.com/fc/faces/train.json',
         :faces_status => 'http://api.skybiometry.com/fc/faces/status.json',
