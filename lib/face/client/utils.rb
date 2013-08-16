@@ -15,7 +15,9 @@ module Face
         :tags_save => 'http://api.skybiometry.com/fc/tags/save.json',
         :tags_remove => 'http://api.skybiometry.com/fc/tags/remove.json',
         :account_limits => 'http://api.skybiometry.com/fc/account/limits.json',
-        :account_users => 'http://api.skybiometry.com/fc/account/users.json'
+        :account_users => 'http://api.skybiometry.com/fc/account/users.json',
+        :account_namespaces => 'http://api.skybiometry.com/fc/account/namespaces.json',
+        :account_authenticate => 'http://api.skybiometry.com/fc/account/authenticate.json'
       }
 
       def api_crendential
@@ -30,6 +32,11 @@ module Face
         if opts[:uids].is_a? Array
           opts[:uids] = opts[:uids].join(',')
         end
+        
+        if opts[:tids].is_a? Array
+          opts[:tids] = opts[:tids].join(',')
+        end
+        
         response = JSON.parse( RestClient.post(API_METHODS[ api_method ], opts.merge(api_crendential)).body )
         if %w/success partial/.include?(response['status'])
           response
