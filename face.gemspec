@@ -22,4 +22,6 @@ Gem::Specification.new do |s|
   s.add_dependency "rest-client", ">=1.6.1"
   s.add_dependency "json", ">=1.4.6"
 
+  s.licenses = 'MIT'
+
 end
