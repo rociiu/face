@@ -8,15 +8,19 @@ Face is a ruby library of SkyBiometry Face Detection and Recognition API.
 
   irb
   >> require 'face'
-  >> client = Face.get_client(:api_key => 'your_api_key', :api_secret => 'your_api_secret')
+  >> client = Face.get_client(api_key: 'your_api_key', api_secret: 'your_api_secret')
 
 Detect Faces with Urls:
 
-  >> client.faces_detect(:urls => ['http://farm6.static.flickr.com/5220/5431220348_fbdf80ae9.jpg'])
+  >> client.faces_detect(urls: ['http://farm6.static.flickr.com/5220/5431220348_fbdf80ae9.jpg'])
+
+Get all Face attributes:
+
+  >> client.faces_detect(urls: ['http://farm6.static.flickr.com/5220/5431220348_fbdf80ae9.jpg'], attributes: 'all')
   
 Detect Faces with Raw image data:
 
-  >> client.faces_detect(:file => File.new('image.jpg', 'rb'))
+  >> client.faces_detect(file: File.new('image.jpg', 'rb'))
  
 More Documentation refer to http://www.skybiometry.com/Documentation.
 
